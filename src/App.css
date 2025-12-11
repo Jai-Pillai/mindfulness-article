@@ -76,6 +76,7 @@ ul {
   list-style-type: square;
   padding-left: 20px;
   font-size: 1.05em; 
+  padding-bottom:10px;
 }
 
 ol {
