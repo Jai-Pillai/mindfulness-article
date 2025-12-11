@@ -1,0 +1,78 @@
+.container {
+  /*
+  max-width: 800px;
+  margin: 50px auto; Centers the container and adds space at the top
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; Keep text alignment normal 
+  */
+  padding: 0 50px 30px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: rgb(245, 246, 249);
+}
+
+.header-strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 246, 249); 
+    padding: 20px 0;
+    width: 100vw; 
+    /* Pull it to the very edges of the browser */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    /*border-bottom: 2px solid #e9eff7;*/
+}
+
+h1 {
+  color: #333;
+  padding-bottom: 10px;
+  font-size: 2.8em;
+  padding-left: 100px;
+}
+
+.header-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; 
+    padding-right: 100px;
+}
+
+h2 {
+  font-size: 1.8em; 
+  color: #333;
+  margin-top: 40px; /* Generous space above H2 for section separation */
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.15em; 
+  line-height: 1.6; /* Great line height for readability */
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.article-image {
+    max-width: 75%; 
+    height: auto; 
+    margin-bottom: 25px;
+    display: block; 
+}
+
+.article-subimage {
+    max-width: 50%; 
+    height: auto; 
+    margin-bottom: 25px;
+    display: block; 
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
