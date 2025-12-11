@@ -103,7 +103,7 @@ function App() {
           </section>
         </main>
         <footer>
-          No copyright
+          No Copyright
         </footer>
     </div>
   );
