@@ -10,7 +10,7 @@ function App() {
         <main>
           <div className="header-strip">
             <h1>Mindfulness Health Resources</h1>
-            <a href="https://howdy.tamu.edu/main/">
+            <a target="_blank" href="https://howdy.tamu.edu/main/">
             <img src="https://yt3.googleusercontent.com/Q3NQBQf8hqKI8bjw4yPDvvp6E2LQgD1O4nXQwva47SuG0Pwm2_YYHc9WJZ5YHFGQYE52IejpBQ=s900-c-k-c0x00ffffff-no-rj"
             alt="header-Logo" className="header-logo"></img>
             </a>
@@ -20,7 +20,7 @@ function App() {
             flight response and move towards emotional regulation. 
           </p>
           <img src="https://free-images.com/lg/f95b/balance_meditation_meditate_silent.jpg" alt="sunset" className="article-image"></img>
-          <figcaption>Image by <a href="https://pixabay.com/users/realworkhard-23566/">realworkhard</a> on Pixabay</figcaption>
+          <figcaption>Image by <a target="_blank" href="https://pixabay.com/users/realworkhard-23566/">realworkhard</a> on Pixabay</figcaption>
           <p>Mindfulness techniques help one's body <strong>relax</strong>. Relaxation is the 
                 physical and mental response that produces the feeling of calmness and serenity. 
                 These techniques will help you be aware of two parts of yourself, your muscles and your breathing.</p>
@@ -32,7 +32,7 @@ function App() {
               </summary>
                 <p>Muscle relaxation helps one relax by putting the body in a state of muscular release and passivity.</p>
                 <img src="https://cdn.pixabay.com/photo/2020/03/31/10/10/fitness-4986993_1280.jpg" alt="stretch" className="article-subimage"></img>
-                <figcaption>Image by <a href="https://pixabay.com/users/u_91zgw5yq-10572844/">u_91zgw5yq</a> on Pixabay</figcaption>
+                <figcaption>Image by <a target="_blank" href="https://pixabay.com/users/u_91zgw5yq-10572844/">u_91zgw5yq</a> on Pixabay</figcaption>
                 <h3>Muscle Relaxation Exercise</h3>
                 <ol>
                   <li>Tense muscle, release tension, <em>feel the relaxation</em></li>
@@ -75,7 +75,7 @@ function App() {
             <p>Breathing techniques can help calm one's body, including the nervous system. This can help put one's body in a state of
               relaxation. 4-7-8 breathing is one of these forms of controlled breathing.</p>
             <img src="https://cdn.pixabay.com/photo/2022/11/17/03/20/woman-7597270_1280.jpg" alt="stretch" className="article-subimage"></img>
-            <figcaption>Image by <a href="https://pixabay.com/users/minhca-13887954/">MinhCah</a> on Pixabay</figcaption>
+            <figcaption>Image by <a target="_blank" href="https://pixabay.com/users/minhca-13887954/">MinhCah</a> on Pixabay</figcaption>
             <h3>4-7-8 Breathing</h3>
             <ol>
               <li><em>Inhale</em> through your nose for four seconds</li>
@@ -94,8 +94,8 @@ function App() {
           <section>
           <h2>Resource Links</h2>
           <ul>
-            <li><a href="https://www.verywellmind.com/how-do-i-practice-progressive-muscle-relaxation-3024400">Progressive Muscle Relaxation</a></li>
-            <li><a href="https://health.clevelandclinic.org/4-7-8-breathing">4-7-8 Breathing</a></li>
+            <li><a target="_blank" href="https://www.verywellmind.com/how-do-i-practice-progressive-muscle-relaxation-3024400">Progressive Muscle Relaxation</a></li>
+            <li><a target="_blank" href="https://health.clevelandclinic.org/4-7-8-breathing">4-7-8 Breathing</a></li>
           </ul>
           </section>
         </main>
