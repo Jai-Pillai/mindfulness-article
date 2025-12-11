@@ -1,9 +1,44 @@
 import './App.css'
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 function App() {
   // Logic (JavaScript) goes here
+  const muscleRef = useRef(null);
+  const breathingRef = useRef(null);
+  const handleToggle = (ref) => {
+    setTimeout(() => {
+      if (ref.current && ref.current.open) {
+        ref.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 100);
+  };
+  useEffect(() => {
+    const muscleElement = muscleRef.current;
+    const breathingElement = breathingRef.current;
 
+    const muscleListener = () => handleToggle(muscleRef);
+    if (muscleElement) {
+      muscleElement.addEventListener('toggle', muscleListener);
+    }
+
+    const breathingListener = () => handleToggle(breathingRef);
+    if (breathingElement) {
+      breathingElement.addEventListener('toggle', breathingListener);
+    }
+
+    // Clean-up function removes listeners when the component is unmounted
+    return () => {
+      if (muscleElement) {
+        muscleElement.removeEventListener('toggle', muscleListener);
+      }
+      if (breathingElement) {
+        breathingElement.removeEventListener('toggle', breathingListener);
+      }
+    };
+  }, []); // Empty dependency array
   return (
     // Structure (HTML/JSX) goes here
     <div className="container">
@@ -18,18 +53,18 @@ function App() {
             alt="header-Logo" className="header-logo"></img>
             </a>
           </div>
-          By Jai Pillai | 12/10/2025
-          <p>Mindfulness is the state of being active and aware of the present. This awareness can help one shift away from a fight or
+          <p><em>Mindfulness</em> is the state of being active and aware of the present. This awareness can help one shift away from a fight or
             flight response and move towards emotional regulation. 
           </p>
+          <figcaption>By Jai Pillai | 12/10/2025</figcaption>
           <img src="https://free-images.com/lg/f95b/balance_meditation_meditate_silent.jpg" alt="sunset" className="article-image"></img>
           <figcaption>Image by <a target="_blank" href="https://pixabay.com/users/realworkhard-23566/">realworkhard</a> on Pixabay</figcaption>
-          <p>Mindfulness techniques help one's body <strong>relax</strong>. Relaxation is the 
+          <p>Mindfulness techniques help one's body relax. <em>Relaxation</em> is the 
                 physical and mental response that produces the feeling of calmness and serenity. 
                 These techniques will help you be aware of two parts of yourself, your muscles and your breathing.</p>
           <section>
             <h2>Progressive Muscle Relaxation</h2>
-            <details>
+            <details ref={muscleRef}>
               <summary>
                 <strong>Muscle Relaxation Exercise</strong>
               </summary>
@@ -64,14 +99,14 @@ function App() {
                     <li>Not enough time</li>
                   </ul>
                 </ol>
-                <p>The goal is to learn to recognize tension in the body and produce relaxation at the first
+                <p>The goal is to learn to <strong>recognize tension</strong> in the body and <strong>produce relaxation</strong> at the first
                   sign of tension. In time, anxiety will be replaced with relaxation. This makes avoiding uncomfortable
                   situations unnecessary.</p>
             </details>
           </section>
           <section>
             <h2>Breathing Techniques</h2>
-            <details>
+            <details ref={breathingRef}>
             <summary>
               <strong>Controlled Breathing</strong>
             </summary>
@@ -91,7 +126,7 @@ function App() {
               <li>Practice twice a day at least</li>
               <li>As you improve, relax frequenctly throughout the day</li>
             </ol>
-            <p>Controlled breathing can calm one's mind, aid in sleep, and train one to relax in anxious situations.</p>
+            <p>Controlled breathing can <strong>calm</strong> one's mind, aid in sleep, and be a <strong>strategy to relax</strong> in anxious situations.</p>
             </details>
           </section>
           <section>

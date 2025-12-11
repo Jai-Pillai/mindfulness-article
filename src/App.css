@@ -1,13 +1,4 @@
 .container {
-  /*
-  max-width: 800px;
-  margin: 50px auto; Centers the container and adds space at the top
-  padding: 30px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left; Keep text alignment normal 
-  */
   padding: 0 50px 30px 50px;
   max-width: 1000px;
   margin: 0 auto;
@@ -28,11 +19,11 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    /*border-bottom: 2px solid #e9eff7;*/
+    border-bottom: 8px solid #4e130d;
 }
 
 h1 {
-  color: #333;
+  color: #4e130d;
   padding-bottom: 10px;
   font-size: 2.8em;
   padding-left: 100px;
@@ -63,6 +54,7 @@ p {
     height: auto; 
     margin-bottom: 25px;
     display: block; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .article-subimage {
@@ -70,9 +62,23 @@ p {
     height: auto; 
     margin-bottom: 25px;
     display: block; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+figcaption {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 ul {
   list-style-type: square;
   padding-left: 20px;
+  font-size: 1.05em; 
+}
+
+ol {
+  padding-left: 20px;
+  font-size: 1.05em; 
 }
