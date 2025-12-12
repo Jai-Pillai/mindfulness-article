@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from 'react';
 
 function App() {
   // Logic (JavaScript) goes here
+  //Dropdown Logic
   const muscleRef = useRef(null);
   const breathingRef = useRef(null);
   const handleToggle = (ref) => {
@@ -23,7 +24,7 @@ function App() {
     if (muscleElement) {
       muscleElement.addEventListener('toggle', muscleListener);
     }
-
+    
     const breathingListener = () => handleToggle(breathingRef);
     if (breathingElement) {
       breathingElement.addEventListener('toggle', breathingListener);
