@@ -17,6 +17,7 @@ function App() {
     }, 100);
   };
   useEffect(() => {
+    document.title = "Mindfulness Article";
     const muscleElement = muscleRef.current;
     const breathingElement = breathingRef.current;
 
@@ -44,9 +45,6 @@ function App() {
     // Structure (HTML/JSX) goes here
     <div className="container">
         <main>
-          <head>
-            <title>Mindfulness Article</title>
-          </head>
           <div className="header-strip">
             <h1>Mindfulness Health Resources</h1>
             <a target="_blank" href="https://howdy.tamu.edu/main/">
